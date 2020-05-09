@@ -1,0 +1,23 @@
+body {
+    background-color: #272d33;
+}
+
+.hero-area {
+    /* min-height: 100vh; */
+}
+
+* {
+    color: #e5e1dd;
+}
+
+.bg-light {
+    background-color: #e5e1dd;
+}
+
+.bg-dark {
+    background-color: #383c40;
+}
+
+.text-center {
+    text-align: center;
+}
