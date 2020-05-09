@@ -1,5 +1,5 @@
 body {
-    background-color: #272d33;
+    background-color: #f7f7f7;
     font-family: proxima-nova, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -10,17 +10,29 @@ body {
 }
 
 * {
-    color: #e5e1dd;
+    color: #eeeeee;
+    border-radius: 10px 10px 10px ;
+
 }
 
 .bg-light {
-    background-color: #e5e1dd;
 }
 
 .bg-dark {
-    background-color: #383c40;
+    background-color:#929aab;
+     ;
 }
 
 .text-center {
     text-align: center;
+    color: black;
+}
+h2{
+    color: white;
+}
+p{
+    opacity: 50;
+}
+.bg-lig{
+    background-color: #929aab;
 }
