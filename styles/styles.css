@@ -1,39 +1,64 @@
-body {
-    background-color: #f7f7f7;
+* {
+    color: #3B261E;
     font-family: proxima-nova, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
+body {
+    background-color: #f7f7f7;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.border {
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
 .hero-area {
-    /* min-height: 100vh; */
+    background-image: url("../assets/hero-bg.png");
+    background-size: cover;
 }
 
-* {
-    color: #eeeeee;
-    border-radius: 8px 8px 8px ;
-
-}
-
-.bg-light {
-}
-
-.bg-dark {
-    background-color:#929aab;
-     ;
+.hero-title {
+    font-size: 4rem;
 }
 
 .text-center {
     text-align: center;
-    color: gray;
 }
-h2{
-    color: white;
+
+.text-sm {
+    font-size: small;
 }
-p{
-    opacity: 50;
+
+.text-lg {
+    font-size: large;
 }
-.bg-lig{
-    background-color: #929aab;
-    opacity: 40;
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-secondary {
+    opacity: 0.8;
+}
+
+.text-light {
+    color: #f5e9d3;
+}
+
+.bg-light {
+    background-color: #f5e9d3;
+}
+
+.bg-brown {
+    background-color: #3B261E;
+}
+
+.bg-light-orange {
+    background-color: #F9C893;
 }
