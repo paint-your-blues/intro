@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Recoleta";
+    src: url("../assets/Recoleta-RegularDEMO.otf");
+}
+
 * {
     color: #3B261E;
     font-family: proxima-nova, sans-serif;
@@ -61,4 +66,10 @@ hr {
 
 .bg-light-orange {
     background-color: #F9C893;
+}
+
+.logo {
+    font-family: Recoleta, sans-serif;
+    font-weight: bolder;
+    color: #cc6633;
 }
