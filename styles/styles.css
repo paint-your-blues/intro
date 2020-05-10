@@ -73,3 +73,26 @@ hr {
     font-weight: bolder;
     color: #cc6633;
 }
+
+.btn {
+    border: 4px solid #3B261E;
+    color: #3B261E;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    transition: ease .2s;
+}
+
+.btn:hover {
+    background-color: #3B261E;
+    color: #f7f7f7 !important;
+}
+
+.btn i {
+    transition: ease .2s;
+}
+
+.btn:hover i {
+    color: #f7f7f7 !important;
+}
