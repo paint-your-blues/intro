@@ -69,7 +69,6 @@ a {
 
 .banner-bg2 {
     background-image: url("./../assets/banner-bg2.png");
-    width: calc(100% + 12px);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
