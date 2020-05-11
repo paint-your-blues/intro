@@ -12,3 +12,7 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+// Set first collapse to be active by defualt 
+acc[0].classList.toggle("accordion-active");
+acc[0].nextElementSibling.style.maxHeight = acc[0].nextElementSibling.scrollHeight + "px";
