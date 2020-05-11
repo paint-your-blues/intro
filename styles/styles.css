@@ -51,6 +51,14 @@ body {
     color: #7A7E2E;
 }
 
+.text-cream{
+  color:#F5E9D3;
+}
+
+.banner-bg2{
+  background-image: url("./../assets/banner-bg2.png");
+}
+
 #viewGuidelinesBtn {
     color: #fff;
     background: #7A7E2E;
