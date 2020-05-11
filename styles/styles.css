@@ -154,9 +154,23 @@ a {
     opacity: 0.5;
 }
 
+.accordion {
+    transition: ease .2s;
+}
+
 .accordion:hover {
     cursor: pointer;
     color: #cc6633;
+}
+
+.fa-caret-right {
+    transition: ease .2s;
+}
+
+.accordion-active i{
+    transform: rotate(90deg);
+   -webkit-transform: rotate(90deg);
+   -ms-transform: rotate(90deg);
 }
 
 .faq-ans {
