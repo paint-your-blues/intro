@@ -50,14 +50,25 @@ body {
 .text-green {
   color: #7a7e2e;
 }
-
+.banner-bg1 {
+  background-image: url("./../assets/banner-bg1.png");
+  background-size: cover;
+}
 .banner-bg2 {
   background-image: url("./../assets/banner-bg2.png");
+  background-size: cover;
+}
+.banner-bg3 {
+  background-image: url("./../assets/banner-bg3.png");
   background-size: cover;
 }
 
 .text-smoke {
   color: #f5e9d3;
+}
+
+.text-lighten{
+  opacity: 0.5
 }
 
 #viewGuidelinesBtn {
