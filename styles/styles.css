@@ -109,6 +109,10 @@ a {
     opacity: 0.5
 }
 
+.submission-arrow{
+  height:222px;
+}
+
 .btn {
     border: none;
     border-radius: 56px;
@@ -159,4 +163,16 @@ a {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+}
+
+.flex{
+  display:flex;
+}
+
+.justify-content-center{
+  justify-content: center;
+}
+
+.align-items-end{
+  align-items: flex-end;
 }
