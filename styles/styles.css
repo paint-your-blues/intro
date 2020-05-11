@@ -15,6 +15,10 @@ body {
   background-color: #f5e9d3;
 }
 
+hr {
+    border: .5px solid #3B261E;
+}
+
 .h-recoleta {
   font-family: "Recoleta";
   font-style: normal;
@@ -28,15 +32,19 @@ body {
 }
 
 .separator-bold {
-  border: 4px solid #cc6633;
+  border: 2px solid #cc6633;
 }
 
 .separator-light {
-  border: 1px solid #cc6633;
+  border: .5px solid #cc6633;
 }
 
 .text-bold {
   font-weight: bold;
+}
+
+.text-sm {
+    font-size: small;
 }
 
 .text-xl {
@@ -114,4 +122,8 @@ body {
   box-sizing: border-box;
   border-radius: 16px;
   color: #f5e9d3;
+}
+
+.half-opacity {
+    opacity: 0.5;
 }
