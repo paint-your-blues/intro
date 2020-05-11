@@ -11,88 +11,29 @@
 }
 
 body {
-    background-color: #f7f7f7;
-}
-
-hr {
-    border: 0;
-    border-top: 1px solid rgba(0, 0, 0, .1);
-}
-
-.border {
-    border: 1px solid rgba(0, 0, 0, .1);
-}
-
-.hero-area {
-    background-image: url("../assets/hero-bg.png");
-    background-size: cover;
-}
-
-.hero-title {
-    font-size: 4rem;
+    background-color: #F5E9D3;
 }
 
 .text-center {
     text-align: center;
 }
 
-.text-sm {
-    font-size: small;
+.separator-bold {
+    border: 4px solid #CC6633;
 }
 
-.text-lg {
-    font-size: large;
+.separator-light {
+    border: 1px solid #CC6633;
 }
 
 .text-bold {
     font-weight: bold;
 }
 
-.text-secondary {
-    opacity: 0.8;
+.text-xl {
+    font-size: x-large;
 }
 
-.text-light {
-    color: #f5e9d3;
-}
-
-.bg-light {
-    background-color: #f5e9d3;
-}
-
-.bg-brown {
-    background-color: #3B261E;
-}
-
-.bg-light-orange {
-    background-color: #F9C893;
-}
-
-.logo {
-    font-family: Recoleta, sans-serif;
-    font-weight: bolder;
-    color: #cc6633;
-}
-
-.btn {
-    border: 4px solid #3B261E;
-    color: #3B261E;
-    background-color: transparent;
-    cursor: pointer;
-    padding: 1rem 1.5rem;
-    font-size: 1.2rem;
-    transition: ease .2s;
-}
-
-.btn:hover {
-    background-color: #3B261E;
-    color: #f7f7f7 !important;
-}
-
-.btn i {
-    transition: ease .2s;
-}
-
-.btn:hover i {
-    color: #f7f7f7 !important;
+.text-orange {
+    color: #CC6633;
 }
