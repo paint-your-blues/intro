@@ -16,6 +16,7 @@ body {
 }
 
 hr {
+    opacity: 0.2;
     border: .5px solid #3B261E;
 }
 
@@ -146,4 +147,16 @@ a {
 
 .half-opacity {
     opacity: 0.5;
+}
+
+.accordion:hover {
+    cursor: pointer;
+    color: #cc6633;
+}
+
+.faq-ans {
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
