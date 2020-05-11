@@ -15,6 +15,14 @@ body {
     background-color: #F5E9D3;
 }
 
+.h-recoleta {
+    font-family: "Recoleta";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 72px;
+}
+
 .text-center {
     text-align: center;
 }
