@@ -51,6 +51,10 @@ body {
     color: #7A7E2E;
 }
 
+.text-smoke {
+    color: #F5E9D3;
+}
+
 #viewGuidelinesBtn {
     color: #fff;
     background: #7A7E2E;
@@ -63,4 +67,12 @@ body {
     background: #fff;
     border: none;
     border-radius: 56px;
+}
+
+.making-submissions-box {
+    background: #3B261E;
+    border: 5px solid #3B261E;
+    box-sizing: border-box;
+    border-radius: 16px;
+    color: #F5E9D3;
 }
