@@ -53,6 +53,7 @@ body {
 
 .banner-bg2 {
   background-image: url("./../assets/banner-bg2.png");
+  background-size: cover;
 }
 
 .text-smoke {
