@@ -76,6 +76,22 @@ a {
     line-height: 24px
 }
 
+.man-door-container{
+  position: relative;
+}
+
+.man{
+  position: absolute;
+  top: 0;
+  left:0;
+}
+
+.shadow-image{
+  position: relative;
+  bottom: 130px;
+  left: 60px;
+}
+
 .banner-bg1 {
     background-image: url("./../assets/banner-bg1.png");
     background-repeat: no-repeat;
@@ -175,4 +191,9 @@ a {
 
 .align-items-end{
   align-items: flex-end;
+}
+
+.img-inherit{
+  height: inherit;
+  width: inherit;
 }
