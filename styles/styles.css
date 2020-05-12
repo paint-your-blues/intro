@@ -242,4 +242,7 @@ nav ul a{
         display: block !important
     }
 
+    .row-reverse-lg {
+        flex-direction: row-reverse;
+    }
 }
