@@ -22,6 +22,11 @@ hr {
 
 a {
     text-decoration: none !important;
+    transition: ease 0.1s;
+}
+
+a:hover {
+    opacity: 0.8;
 }
 
 .text-center {
