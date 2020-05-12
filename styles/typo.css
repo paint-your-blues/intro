@@ -33,12 +33,11 @@ h2 {
     line-height: 32px;
 }
 
-/* Unused */
-/*h5 {
+h5 {
     font-weight: bold;
-    font-size: 20px;
-    line-height: 32px;
-} */
+    font-size: 17px;
+    line-height: 24px;
+}
 
 @media (min-width: 1024px) {
     h4 {
