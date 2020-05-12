@@ -129,7 +129,7 @@ nav ul a{
     opacity: 0.5
 }
 
-.submission-arrow {
+.rotated-arrow {
     height: 222px;
     position: absolute;
     display: none !important
@@ -232,7 +232,7 @@ nav ul a{
 }
 
 @media (min-width: 1024px) {
-    .submission-arrow {
+    .rotated-arrow {
         display: block !important
     }
 
