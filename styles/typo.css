@@ -33,12 +33,12 @@ h2 {
     line-height: 32px;
 }
 
-/* Unused */
-/*h5 {
+h5 {
     font-weight: bold;
     font-size: 20px;
     line-height: 32px;
-} */
+    margin: 0
+}
 
 @media (min-width: 1024px) {
     h4 {
@@ -50,14 +50,14 @@ h2 {
         font-size: 72px;
         line-height: 72px;
     }
-    
+
     .lead-para {
         font-size: 28px;
         line-height: 40px;
     }
 
     /* Unused */
-    /* 
+    /*
     .paragraph-big {
         font-weight: normal;
         font-size: 20px;
