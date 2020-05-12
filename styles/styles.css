@@ -29,6 +29,12 @@ a:hover {
     opacity: 0.9;
 }
 
+nav ul{
+  list-style-type: none;
+}
+
+
+
 .text-center {
     text-align: center;
 }
