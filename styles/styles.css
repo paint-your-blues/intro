@@ -63,6 +63,17 @@ a:hover {
     font-weight: bold;
 }
 
+.message-container{
+  position: relative;
+  height: 115vh;
+}
+
+.illustration-container{
+  position: absolute;
+  bottom: 0;
+  right: calc(100% /12);
+}
+
 .banner-bg1 {
     background-image: url("./../assets/banner-bg1.png");
     background-repeat: no-repeat;
@@ -186,6 +197,11 @@ a:hover {
 
 .align-items-end {
     align-items: flex-end;
+}
+
+.device-height{
+  height: 100vh;
+  position: relative;
 }
 
 .img-fluid {
