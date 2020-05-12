@@ -2,4 +2,4 @@
 
 Intro website for Paint Your Blues campaign.
 
-## Contributions
+View here : [https://paint-your-blues.github.io/static/](https://paint-your-blues.github.io/static/)
