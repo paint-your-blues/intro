@@ -31,9 +31,24 @@ a:hover {
 
 nav ul{
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding:0;
+  align-items: center;
 }
 
+nav ul a{
+  display: flex;
+  align-items: center;
+}
 
+.logo{
+  flex:1;
+}
+
+.hide{
+  display: none;
+}
 
 .text-center {
     text-align: center;
@@ -76,7 +91,7 @@ nav ul{
 
 .illustration-container{
   position: absolute;
-  bottom: 0;
+  bottom: -24px;
   right: calc(100% /12);
 }
 
@@ -220,4 +235,5 @@ nav ul{
     .rotated-arrow {
         display: block !important
     }
+
 }
