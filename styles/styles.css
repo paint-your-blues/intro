@@ -73,9 +73,10 @@ a:hover {
 }
 
 .banner-bg2 {
-    background-image: url("./../assets/banner-bg2.png");
+    /* background-image: url("./../assets/banner-bg2.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 100%; */
+    background: #3b261e;
 }
 
 .banner-bg3 {
@@ -113,13 +114,13 @@ a:hover {
 }
 
 .btn-green {
-    color: #fff;
+    color: #F5E9D3;
     background: #7a7e2e;
 }
 
 .btn-green:hover {
-    background: #fff;
-    color: #7a7e2e;
+    color: #fff;
+    background: #636725;
 }
 
 .btn-light {
@@ -128,8 +129,8 @@ a:hover {
 }
 
 .btn-light:hover {
-    background: #4998aa;
-    color: #fff;
+    color: #57a5b7;
+    background: #f7f7f7;
 }
 
 .making-submissions-box {
@@ -146,7 +147,7 @@ a:hover {
 
 .accordion:hover {
     cursor: pointer;
-    color: #cc6633;
+    color: #7a7e2e;
 }
 
 .fa-caret-right {
