@@ -111,6 +111,7 @@ a:hover {
 .submission-arrow {
     height: 222px;
     position: absolute;
+    display: none !important
 }
 
 .btn {
@@ -207,4 +208,10 @@ a:hover {
 .img-fluid {
     max-width: 100%;
     height: auto;
+}
+
+@media (min-width: 1024px) {
+    .submission-arrow {
+        display: block !important
+    }
 }
