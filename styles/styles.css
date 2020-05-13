@@ -144,7 +144,7 @@ nav ul a{
 }
 
 .btn {
-    height: 48px;
+    min-height: 48px;
     border: none;
     border-radius: 56px;
     transition: ease 0.2s;
@@ -164,7 +164,7 @@ nav ul a{
 
 @media (min-width: 1024px) {
     .btn {
-        height: 64px;
+        min-height: 64px;
         font-size: 24px;
     }
     .btn-sharing {
