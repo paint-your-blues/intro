@@ -278,6 +278,10 @@ nav ul a{
   }
 }
 
+.show-on-desktop {
+    display: none;
+}
+
 @media (min-width: 1024px) {
     .rotated-arrow {
         display: block !important
@@ -290,5 +294,9 @@ nav ul a{
 
     .row-reverse-lg {
         flex-direction: row-reverse;
+    }
+
+    .show-on-desktop {
+        display: block;
     }
 }
