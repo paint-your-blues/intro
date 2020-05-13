@@ -3,6 +3,18 @@
   font-style: normal;
 }
 
+.theme-number{
+font-family: Recoleta;
+font-style: normal;
+font-weight: bold;
+font-size: 76px;
+line-height: 88px;
+opacity: 0.4;
+-webkit-text-fill-color: rgba(0,0,0,0); /* Will override color (regardless of order) */
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: #CC6633;
+}
+
 .paragraph-main {
   font-weight: normal;
   font-size: 17px;
