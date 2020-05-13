@@ -28,7 +28,7 @@ window.onbeforeunload = function () {
 }
 // Smooth scrolling 
 var guidelinesSection = document.getElementById('guidelinesSection');
-var guidelinesPosition = guidelinesSection.getBoundingClientRect().top;
+var guidelinesPosition = guidelinesSection.getBoundingClientRect().top - 72;
 
 function scrollToGuidelines() {
   window.scrollTo({
