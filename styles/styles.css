@@ -58,6 +58,10 @@ nav ul a{
     text-align: center;
 }
 
+.text-right {
+    text-align: right;
+}
+
 .separator-bold {
     border: 2px solid #cc6633;
 }
@@ -261,6 +265,12 @@ nav ul a{
 @media screen and (max-width:720px) and (min-height:760px){
   .message-container{
     height:100vh;
+  }
+}
+
+@media (max-width: 720px) {
+  .sm-text-center{
+    text-align: center;
   }
 }
 
