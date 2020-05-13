@@ -29,6 +29,10 @@ a:hover {
     opacity: 0.9;
 }
 
+.underline-on-hover:hover {
+    text-decoration: underline !important;
+}
+
 nav ul{
   list-style-type: none;
   display: flex;
@@ -146,10 +150,17 @@ nav ul a{
     line-height: 32px;
 }
 
+.btn-sharing {
+    width: 48px;
+}
+
 @media (min-width: 1024px) {
     .btn {
         height: 64px;
         font-size: 24px;
+    }
+    .btn-sharing {
+        width: 64px;
     }
 }
 
