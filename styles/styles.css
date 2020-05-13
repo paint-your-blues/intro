@@ -154,6 +154,7 @@ nav ul a{
     line-height: 32px;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+    width: inherit;
 }
 
 .btn-sharing {
@@ -166,6 +167,7 @@ nav ul a{
     .btn {
         min-height: 64px;
         font-size: 24px;
+        width: auto;
     }
     .btn-sharing {
         width: 64px;
