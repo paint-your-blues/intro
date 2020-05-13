@@ -86,22 +86,33 @@ nav ul a {
   color: #7a7e2e;
 }
 
+nav {
+  background-color: #f5e9d3;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  transition: ease .2s;
+}
+
 .nav-link {
   font-size: 20px;
   line-height: 32px;
   font-weight: bold;
 }
 
-.message-container {
-  position: relative;
-  height: 130vh;
-  max-height: 1200px;
-}
-
-.illustration-container {
-  position: absolute;
-  bottom: -32px;
-  right: calc(100% / 8);
+@media (min-width: 1024px) {
+  .message-container {
+    position: relative;
+    height: 130vh;
+    max-height: 1200px;
+    margin-bottom: 5rem !important;
+  }
+  
+  .illustration-container {
+    position: absolute;
+    bottom: -32px;
+    right: calc(100% / 8);
+  }
 }
 
 .banner-bg1 {

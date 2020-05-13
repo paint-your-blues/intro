@@ -5,7 +5,7 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 // Iterate over accordion and add click listeners
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+  acc[i].addEventListener("click", function () {
     this.classList.toggle("accordion-active");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
@@ -29,9 +29,24 @@ window.onbeforeunload = function () {
 // Smooth scrolling 
 var guidelinesSection = document.getElementById('guidelinesSection');
 var guidelinesPosition = guidelinesSection.getBoundingClientRect().top;
-function scrollToGuidelines(){
-   window.scrollTo({
-       top: guidelinesPosition,
-       behavior: "smooth"
-   });
+
+function scrollToGuidelines() {
+  window.scrollTo({
+    top: guidelinesPosition,
+    behavior: "smooth"
+  });
+}
+
+//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar shadow on scroll ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+window.onscroll = function () {
+  scrollFunction()
+};
+function scrollFunction() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    document.querySelector("nav").style.boxShadow = "0 0.5rem 1rem rgba(0, 0, 0, 0.15)";
+  } else {
+    document.querySelector("nav").style.boxShadow = "none";
+  }
 }
