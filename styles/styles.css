@@ -136,13 +136,21 @@ nav ul a{
 }
 
 .btn {
+    height: 48px;
     border: none;
     border-radius: 56px;
     transition: ease 0.2s;
     cursor: pointer;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32px;
+}
+
+@media (min-width: 1024px) {
+    .btn {
+        height: 64px;
+        font-size: 24px;
+    }
 }
 
 .btn-green {
@@ -173,6 +181,13 @@ nav ul a{
     box-sizing: border-box;
     border-radius: 16px;
     color: #f5e9d3;
+    padding: 24px;
+}
+
+@media (min-width: 1024px) {
+    .making-submissions-box {
+        padding: 40px;
+    }
 }
 
 .accordion {

@@ -56,11 +56,9 @@ h5 {
     line-height: 40px;
   }
 
-  /* Unused */
-  /*
-    .paragraph-big {
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 32px;
-    } */
+  .paragraph-big {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 32px;
+  }
 }
