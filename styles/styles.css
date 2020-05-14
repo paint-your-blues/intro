@@ -91,7 +91,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 2;
-  transition: ease .2s;
+  transition: ease 0.2s;
 }
 
 .nav-link {
@@ -281,6 +281,10 @@ nav {
   height: auto;
 }
 
+.sm-img {
+  max-width: 210px;
+}
+
 @media (max-width: 720px) {
   .sm-text-center {
     text-align: center;
@@ -307,5 +311,9 @@ nav {
 
   .show-on-desktop {
     display: block;
+  }
+
+  .sm-img {
+    max-width: 100%;
   }
 }
