@@ -15,9 +15,13 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-// Set first collapse to be active by defualt 
-acc[0].classList.toggle("accordion-active");
-acc[0].nextElementSibling.style.maxHeight = acc[0].nextElementSibling.scrollHeight + "px";
+// Get device width 
+var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+// Set first collapse to be active by if large device 
+if(width>1024){
+  acc[0].classList.toggle("accordion-active");
+  acc[0].nextElementSibling.style.maxHeight = acc[0].nextElementSibling.scrollHeight + "px";
+}
 
 //
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Section scrolling ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
