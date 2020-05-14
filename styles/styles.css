@@ -101,6 +101,10 @@ nav {
   display: inline-block;
 }
 
+.illustration-container {
+  margin-top: -22px;
+}
+
 @media (min-width: 1024px) {
   .message-container {
     position: relative;
@@ -110,6 +114,7 @@ nav {
   }
 
   .illustration-container {
+    margin-top: 0;
     position: absolute;
     bottom: -32px;
     right: calc(100% / 8);
@@ -285,6 +290,12 @@ nav {
   max-width: 210px;
 }
 
+.sm-hero {
+  -ms-flex: 0 0 83.333333%;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%
+}
+
 @media (max-width: 720px) {
   .sm-text-center {
     text-align: center;
@@ -314,6 +325,10 @@ nav {
   }
 
   .sm-img {
+    max-width: 100%;
+  }
+
+  .sm-hero {
     max-width: 100%;
   }
 }
