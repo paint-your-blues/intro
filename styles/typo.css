@@ -4,7 +4,7 @@
 }
 
 .theme-number {
-  font-family: Recoleta;
+  font-family: Recoleta, serif;
   font-style: normal;
   font-weight: bold;
   font-size: 76px;
@@ -33,7 +33,7 @@ h4 {
 }
 
 h2 {
-  font-family: Recoleta;
+  font-family: Recoleta, serif;
   font-weight: bold;
   font-size: 48px;
   line-height: 48px;
