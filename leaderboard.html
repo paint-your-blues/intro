@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>PaintYourBlues - Make art that can heal the mind!</title>
+    <meta name="description"
+        content="A poster campaign to create awareness on mental health. Contribute towards building an Open Source Graphic Library for global distribution." />
+
+    <!-- Open-graph meta -->
+    <meta property="og:title" content="PaintYourBlues - Make art that can heal the mind!">
+    <meta property="og:description"
+        content="A poster campaign to create awareness on mental health. Contribute towards building an Open Source Graphic Library for global distribution.">
+    <meta property="og:image" content="https://paintyourblues.com/details/assets/meta.jpg">
+    <meta property="og:url" content="https://paintyourblues.com">
+    <meta property="og:site_name" content="PaintYourBlues">
+
+    <!-- Twitter meta -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="PaintYourBlues">
+
+    <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/typo.css">
+    <link rel="stylesheet" href="styles/styles_1.css">
+    <link rel="stylesheet" href="styles/styles_2.css">
+    <link rel="stylesheet" href="https://use.typekit.net/aec8kbg.css">
+</head>
+
+<body>
+
+    <nav class="mb-4 py-1">
+        <div class="container">
+            <ul>
+                <li class="logo">
+                    <a href="https://www.instagram.com/paintyourblues/" target="_blank" class="nav-link text-green">
+                        <i class="fa fa-instagram text-green fa-lg mr-1"></i>
+                        PaintYourBlues
+                    </a>
+                </li>
+                <li class="show-on-desktop">
+                    <a href="./index.html">
+                        <h5 class="text-green">home</h5>
+                    </a>
+                </li>
+                <li class="show-on-desktop text-green text-weight-bold mx-3">.</li>
+                <li class="show-on-desktop">
+                    <a href="./entries.html">
+                        <h5 class="text-green">entries</h5>
+                    </a>
+                </li>
+                <li class="show-on-desktop text-green text-weight-bold mx-3">.</li>
+                <li class="show-on-desktop">
+                    <a href="#">
+                        <h5 class="text-green">leaderboard</h5>
+                    </a>
+                </li>
+                <li class="show-on-desktop text-green text-weight-bold mx-3">.</li>
+                <li class="show-on-desktop mr-4">
+                    <a href="./curators.html">
+                        <h5 class="text-green">curators</h5>
+                    </a>
+                </li>
+                <li class="show-on-desktop">
+                    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpaintyourblues.com&text=A%20poster%20campaign%20to%20create%20awareness%20on%20mental%20health.%20Contribute%20towards%20building%20an%20Open%20Source%20Graphic%20Library%20for%20global%20distribution.%20%23PaintYourBlues%20%23GraphicDesign%20%23MentalHealth"
+                        target="_blank"
+                        onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                        title="Share on Twitter" class="mr-4">
+                        <i class="fa fa-twitter text-green fa-lg"></i>
+                    </a>
+                </li>
+                <li class="show-on-desktop">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpaintyourblues.com"
+                        target="_blank"
+                        onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                        title="Share on Facebook">
+                        <i class="fa fa-facebook text-green fa-lg"></i>
+                    </a>
+                </li>
+                <li>
+                    <span class="nav-toggle-icon" onclick="toggleNav()">
+                        <i class="fa fa-bars text-green fa-lg"></i>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="container" id="navbarCollapse">
+            <div class="text-center pb-4">
+                <a href="./index.html" class="text-center nav-link">
+                    <h5 class="text-green">home</h5>
+                </a>
+                <br>
+                <a href="./entries.html" class="text-center nav-link">
+                    <h5 class="text-green">entries</h5>
+                </a>
+                <br>
+                <a href="./leaderboard.html" class="text-center nav-link">
+                    <h5 class="text-green">leaderboard</h5>
+                </a>
+                <br>
+                <a href="./curators.html" class="text-center nav-link hidden">
+                    <h5 class="text-green">curators</h5>
+                </a>
+                <br><br>
+                <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpaintyourblues.com&text=A%20poster%20campaign%20to%20create%20awareness%20on%20mental%20health.%20Contribute%20towards%20building%20an%20Open%20Source%20Graphic%20Library%20for%20global%20distribution.%20%23PaintYourBlues%20%23GraphicDesign%20%23MentalHealth"
+                    target="_blank"
+                    onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                    title="Share on Twitter" class="mr-3">
+                    <i class="fa fa-twitter text-green fa-lg"></i>
+                </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpaintyourblues.com"
+                    target="_blank"
+                    onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                    title="Share on Facebook">
+                    <i class="fa fa-facebook text-green fa-lg"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-5">
+                <div id="titleBoxRef">
+                    <h2 class="m-0" id="leaderboardTitle">leaderboard</h2>
+                    <p class="m-0 mb-2 paragraph-small"><span class="text-orange text-weight-bold" id="refreshStatus"></span></p>
+                    <hr class="m-0">
+                </div>
+                <ul class="m-0 p-0 pt-2" id="rank-list">
+                    <div class="leaderboard-list-item" id="list-item">
+                        <div class="mr-2">
+                            <img src="https://picsum.photos/id/1052/800/800" class="leaderboard-thumbnail"> 
+                            <img src="https://picsum.photos/id/177/800/800" class="leaderboard-profile-pic">
+                        </div>
+                        <div class="flex-grow-1">
+                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{entry.insta_id}</p>
+                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{entry.likes}</span> </span>
+                        </div>
+                        <div>
+                            <span class="leaderboard-rank">
+                                01
+                            </span>
+                        </div>
+                        <div class="upvote-btn-container">
+                            <button class="btn btn-green upvote-btn">upvote</button>
+                        </div>
+                    </div>
+                    <div class="leaderboard-list-item" id="list-item">
+                        <div class="mr-2">
+                            <img src="https://picsum.photos/id/1052/800/800" class="leaderboard-thumbnail"> 
+                            <img src="https://picsum.photos/id/177/800/800" class="leaderboard-profile-pic">
+                        </div>
+                        <div class="flex-grow-1">
+                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{entry.insta_id}</p>
+                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{entry.likes}</span> </span>
+                        </div>
+                        <div>
+                            <span class="leaderboard-rank">
+                                02
+                            </span>
+                        </div>
+                        <div class="upvote-btn-container">
+                            <button class="btn btn-green upvote-btn">upvote</button>
+                        </div>
+                    </div>
+                    <div class="leaderboard-list-item" id="list-item">
+                        <div class="mr-2">
+                            <img src="https://picsum.photos/id/1052/800/800" class="leaderboard-thumbnail"> 
+                            <img src="https://picsum.photos/id/177/800/800" class="leaderboard-profile-pic">
+                        </div>
+                        <div class="flex-grow-1">
+                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{entry.insta_id}</p>
+                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{entry.likes}</span> </span>
+                        </div>
+                        <div>
+                            <span class="leaderboard-rank">
+                                03
+                            </span>
+                        </div>
+                        <div class="upvote-btn-container">
+                            <button class="btn btn-green upvote-btn">upvote</button>
+                        </div>
+                    </div>
+                    <div class="leaderboard-list-item" id="list-item">
+                        <div class="mr-2">
+                            <img src="https://picsum.photos/id/1052/800/800" class="leaderboard-thumbnail"> 
+                            <img src="https://picsum.photos/id/177/800/800" class="leaderboard-profile-pic">
+                        </div>
+                        <div class="flex-grow-1">
+                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{entry.insta_id}</p>
+                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{entry.likes}</span> </span>
+                        </div>
+                        <div>
+                            <span class="leaderboard-rank">
+                                04
+                            </span>
+                        </div>
+                        <div class="upvote-btn-container">
+                            <button class="btn btn-green upvote-btn">upvote</button>
+                        </div>
+                    </div>
+                    <div class="leaderboard-list-item" id="list-item">
+                        <div class="mr-2">
+                            <img src="https://picsum.photos/id/1052/800/800" class="leaderboard-thumbnail"> 
+                            <img src="https://picsum.photos/id/177/800/800" class="leaderboard-profile-pic">
+                        </div>
+                        <div class="flex-grow-1">
+                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{entry.insta_id}</p>
+                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{entry.likes}</span> </span>
+                        </div>
+                        <div>
+                            <span class="leaderboard-rank">
+                                05
+                            </span>
+                        </div>
+                        <div class="upvote-btn-container">
+                            <button class="btn btn-green upvote-btn">upvote</button>
+                        </div>
+                    </div>
+                    <div class="leaderboard-list-item" id="list-item">
+                        <div class="mr-2">
+                            <img src="https://picsum.photos/id/1052/800/800" class="leaderboard-thumbnail"> 
+                            <img src="https://picsum.photos/id/177/800/800" class="leaderboard-profile-pic">
+                        </div>
+                        <div class="flex-grow-1">
+                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{entry.insta_id}</p>
+                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{entry.likes}</span> </span>
+                        </div>
+                        <div>
+                            <span class="leaderboard-rank">
+                                06
+                            </span>
+                        </div>
+                        <div class="upvote-btn-container">
+                            <button class="btn btn-green upvote-btn">upvote</button>
+                        </div>
+                    </div>
+                    <div class="leaderboard-list-item" id="list-item">
+                        <div class="mr-2">
+                            <img src="https://picsum.photos/id/1052/800/800" class="leaderboard-thumbnail"> 
+                            <img src="https://picsum.photos/id/177/800/800" class="leaderboard-profile-pic">
+                        </div>
+                        <div class="flex-grow-1">
+                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{entry.insta_id}</p>
+                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{entry.likes}</span> </span>
+                        </div>
+                        <div>
+                            <span class="leaderboard-rank">
+                                07
+                            </span>
+                        </div>
+                        <div class="upvote-btn-container">
+                            <button class="btn btn-green upvote-btn">upvote</button>
+                        </div>
+                    </div>
+                    <div class="leaderboard-list-item" id="list-item">
+                        <div class="mr-2">
+                            <img src="https://picsum.photos/id/1052/800/800" class="leaderboard-thumbnail"> 
+                            <img src="https://picsum.photos/id/177/800/800" class="leaderboard-profile-pic">
+                        </div>
+                        <div class="flex-grow-1">
+                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{entry.insta_id}</p>
+                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{entry.likes}</span> </span>
+                        </div>
+                        <div>
+                            <span class="leaderboard-rank">
+                                08
+                            </span>
+                        </div>
+                        <div class="upvote-btn-container">
+                            <button class="btn btn-green upvote-btn">upvote</button>
+                        </div>
+                    </div>
+                    <div class="leaderboard-list-item" id="list-item">
+                        <div class="mr-2">
+                            <img src="https://picsum.photos/id/1052/800/800" class="leaderboard-thumbnail"> 
+                            <img src="https://picsum.photos/id/177/800/800" class="leaderboard-profile-pic">
+                        </div>
+                        <div class="flex-grow-1">
+                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{entry.insta_id}</p>
+                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{entry.likes}</span> </span>
+                        </div>
+                        <div>
+                            <span class="leaderboard-rank">
+                                09
+                            </span>
+                        </div>
+                        <div class="upvote-btn-container">
+                            <button class="btn btn-green upvote-btn">upvote</button>
+                        </div>
+                    </div>
+                    <div class="leaderboard-list-item" id="list-item">
+                        <div class="mr-2">
+                            <img src="https://picsum.photos/id/1052/800/800" class="leaderboard-thumbnail"> 
+                            <img src="https://picsum.photos/id/177/800/800" class="leaderboard-profile-pic">
+                        </div>
+                        <div class="flex-grow-1">
+                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{entry.insta_id}</p>
+                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{entry.likes}</span> </span>
+                        </div>
+                        <div>
+                            <span class="leaderboard-rank">
+                                10
+                            </span>
+                        </div>
+                        <div class="upvote-btn-container">
+                            <button class="btn btn-green upvote-btn">upvote</button>
+                        </div>
+                    </div>
+                </ul>
+                <div class="scroll-indicator-grad">
+                </div>
+            </div>
+            <div class="col-5 flex-col show-on-desktop">
+                <div class="leaderboard-preview-box">
+                    <div id="blankPreview" class="p-5">
+                        <h4 class="m-0 text-orange mb-3">
+                            leaderboard shows the current trend based likes received on instagram. to upvote an entry, visit instagram and hit <i class="fa fa-heart fa-fw text-orange"></i>
+                        </h4>
+                        <p class="paragraph-main mt-0 text-lighten text-smoke">
+                            top three positions after the voting ends will get ₹10,000 each. apart from these, three more entries will be picked by a curator panel.
+                        </p>
+                    </div>
+                    <div id="framePreview">
+                        <img alt="image" class="img-fluid" id="framePreviewImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Preview modal  -->
+    <div id="previewModal" class="modal flex-col">
+    
+        <div class="text-center my-3">
+            <div class="modal-close-btn" id="modalCloseBtn">
+                <i class="fa fa-times fa-lg m-2 text-lighten"></i>
+            </div>
+        </div>
+    
+        <!-- Modal content -->
+        <div class="modal-content flex-grow-1">
+            <div class="flex mb-2">
+                <div class="flex-grow-1">
+                    <p class="text-smoke m-0 paragraph-small paragraph-big" id="modal_username">leader.username</p>
+                    <span class="text-smoke paragraph-small text-lighten"><i class="fa fa-heart text-smoke"></i>
+                    <span id="modal_likes" class="text-smoke paragraph-small text-lighten">leader.likes</span></span>
+                </div>
+                <div class="leaderboard-rank">
+                    01
+                </div>
+            </div>
+            <div class="modal-frame mb-3 flex">
+                <img class="img-fluid" alt="" id="modelFramePreviewImg">
+            </div>
+            <div class="text-center">
+                <a href="">
+                    <button class="btn btn-green mb-2">
+                        upvote on instagram
+                    </button>
+                </a>
+            </div>
+            <p class="paragraph-small text-smoke text-lighten text-center m-0">
+                to upvote, visit instagram and hit <i class="fa fa-heart text-smoke"></i>
+            </p>
+        </div>
+      
+    </div>
+
+  <!-- footer -->
+
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <hr class="my-4">
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-3 mb-3 sm-text-center">
+                <img src="assets/spif-logo.png" style="max-height: 64px;" alt="Suicide India Foundation">
+            </div>
+            <div class="col-2"></div>
+            <div class="col-5">
+                <div class="text-right mb-3 mb-text-center sm-text-center">
+                    <a href="./index.html" class="nav-link text-green mr-2">home</a>
+                    <span class="text-green text-weight-bold">.</span>
+                    <a href="#" class="nav-link text-green mx-2">leaderboard</a>
+                    <span class="text-green text-weight-bold">.</span>
+                    <a href="./curators.html" class="nav-link text-green mx-2">curators</a>
+                    <span class="text-green text-weight-bold">.</span>
+                    <a href="http://www.spif.in/" class="nav-link text-green mx-2" target="_blank">spif</a>
+                    <span class="text-green text-weight-bold">.</span>
+                    <a href="./legal.html" class="nav-link text-green ml-2">legal</a>
+                </div>
+                <div class="paragraph-small text-lighten mb-3 text-right sm-text-center">
+                    © 2020 Suicide Prevention India Foundation. All Rights Reserved.
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+</body>
+
+<script src="https://use.fontawesome.com/84351caa5a.js" defer></script>
+<script src="scripts/main.js" defer></script>
+<script src="scripts/leaderboard.js" %} defer></script>
+</html>

@@ -1,0 +1,245 @@
+#leaderboardTitle {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+@media (min-width: 1024px) {
+  #leaderboardTitle {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+
+.leaderboard-list-item {
+  display: flex;
+  transition: ease 0.5s;
+  border-radius: 8px;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media (min-width: 1024px) {
+  .leaderboard-list-item {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
+.leaderboard-list-item > * {
+  pointer-events: none;
+}
+
+.leaderboard-list-item.active {
+  background-color: #fff;
+  box-shadow: 0px 5px 19px rgba(59, 38, 30, 0.1);
+}
+
+.leaderboard-list-item div {
+  max-height: 64px;
+}
+
+.leaderboard-list-item.active .likes-span {
+  opacity: 1;
+}
+
+.leaderboard-list-item.active .likes-span i {
+  color: #cc6633;
+}
+
+.leaderboard-thumbnail {
+  position: relative;
+  height: 64px;
+  width: 64px;
+  box-shadow: 2px 2px 0px #f5e9d3;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.leaderboard-profile-pic {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .leaderboard-profile-pic {
+    display: inline-block;
+    position: relative;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    background-blend-mode: normal;
+    opacity: 0.5;
+    padding: 8px;
+    z-index: 1;
+    margin-left: -32px;
+    transition: 0.5s;
+    transform: rotate(-50deg);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+}
+
+.leaderboard-list-item.active .leaderboard-profile-pic {
+  opacity: 1;
+  margin-left: 0;
+  transform: rotate(0deg);
+  -webkit-filter: none;
+  filter: none;
+}
+
+.leaderboard-rank {
+  font-family: Recoleta, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #cc6633;
+}
+
+.upvote-btn-container {
+  width: 0;
+  opacity: 0;
+  transition: 0.25s ease-in;
+}
+
+.leaderboard-list-item.active .upvote-btn-container {
+  width: auto;
+  opacity: 1;
+}
+
+.upvote-btn {
+  display: inline-block;
+  width: 0;
+  opacity: 0;
+  min-height: 48px;
+  font-size: 20px;
+  line-height: 32px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.leaderboard-list-item.active .upvote-btn {
+  width: auto;
+  opacity: 1;
+}
+
+.leaderboard-preview-box {
+  border-radius: 8px;
+  background: #3b261e;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#rank-list {
+  max-height: 90vh;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  padding-bottom: 10vh !important;
+  scrollbar-width: none;
+}
+
+#rank-list::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  #rank-list {
+    margin-left: -32px !important;
+    margin-right: -32px !important;
+  }
+}
+
+#framePreview {
+  height: 100%;
+}
+
+#framePreviewImg,
+#modelFramePreviewImg, .entry-thumbnail {
+  border-radius: 8px;
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0;
+  overflow: auto;
+  background: rgba(256, 256, 256, 0.5);
+  transition: 0.5s ease;
+  transform-origin: bottom;
+}
+
+.modal-close-btn {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  font-weight: lighter;
+}
+
+.modal-content {
+  background-color: #3b261e;
+  box-shadow: 0px -4px 28px rgba(0, 0, 0, 0.5);
+  padding: 24px;
+}
+
+.modal-frame {
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.upvote-btn-small {
+  font-size: 20px;
+  line-height: 32px;
+  height: 40px !important;
+}
+
+.scroll-indicator-grad {
+  background: linear-gradient(
+    to top,
+    #f5e9d3 10%,
+    rgba(245, 233, 211, 0) 98.7%
+  );
+  min-height: 10vh;
+  position: absolute;
+  bottom: 0;
+  z-index: 4;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  margin-left: -32px;
+}
+
+.entry-item {
+  height: 100%;
+  background-color: #3b261e;
+  border-radius: 8px;
+  padding: 0;
+  transition: ease .5s;
+}
+
+.entry-item.active {
+  padding: 1.5rem;
+}
+
+.entry-thumbnail {
+  width: 100%;
+  transition: ease .5s;
+}
+
+.entry-item.active .entry-thumbnail {
+  width: 20%;
+}
+
+.entry-details {
+  display: none;
+}
+
+.entry-item.active .entry-details {
+  display: block;
+}
