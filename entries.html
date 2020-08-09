@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>PaintYourBlues - Make art that can heal the mind!</title>
+    <meta name="description"
+        content="A poster campaign to create awareness on mental health. Contribute towards building an Open Source Graphic Library for global distribution." />
+
+    <!-- Open-graph meta -->
+    <meta property="og:title" content="PaintYourBlues - Make art that can heal the mind!">
+    <meta property="og:description"
+        content="A poster campaign to create awareness on mental health. Contribute towards building an Open Source Graphic Library for global distribution.">
+    <meta property="og:image" content="https://paintyourblues.com/details/assets/meta.jpg">
+    <meta property="og:url" content="https://paintyourblues.com">
+    <meta property="og:site_name" content="PaintYourBlues">
+
+    <!-- Twitter meta -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="PaintYourBlues">
+
+    <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/typo.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/leaderboard.css">
+    <link rel="stylesheet" href="https://use.typekit.net/aec8kbg.css">
+</head>
+
+<body>
+
+    <nav class="mb-4">
+        <div class="container py-1">
+            <ul>
+                <li class="logo">
+                    <a href="./entries.html" class="nav-link text-green">
+                        <i class="fa fa-instagram text-green fa-lg mr-1"></i>
+                        PaintYourBlues
+                    </a>
+                </li>
+                <li class="show-on-desktop">
+                    <a href="./entries.html">
+                        <h5 class="text-green">entries</h5>
+                    </a>
+                </li>
+                <li class="show-on-desktop text-green text-weight-bold mx-3">.</li>
+                <li class="show-on-desktop">
+                    <a href="./leaderboard.html">
+                        <h5 class="text-green">leaderboard</h5>
+                    </a>
+                </li>
+                <li class="show-on-desktop text-green text-weight-bold mx-3">.</li>
+                <li class="show-on-desktop mr-4">
+                    <a href="./index.html">
+                        <h5 class="text-green">about</h5>
+                    </a>
+                </li>
+                <li>
+                <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpaintyourblues.com&text=A%20poster%20campaign%20to%20create%20awareness%20on%20mental%20health.%20Contribute%20towards%20building%20an%20Open%20Source%20Graphic%20Library%20for%20global%20distribution.%20%23PaintYourBlues%20%23GraphicDesign%20%23MentalHealth"
+                    target="_blank"
+                    onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                    title="Share on Twitter" class="mr-3">
+                    <i class="fa fa-twitter text-green fa-lg"></i>
+                </a>
+                </li>
+                <li>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpaintyourblues.com"
+                    target="_blank"
+                    class="mr-3"
+                    onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                    title="Share on Facebook">
+                    <i class="fa fa-facebook text-green fa-lg"></i>
+                </a>
+                </li>
+                <li>
+                    <span class="nav-toggle-icon" onclick="toggleNav()">
+                        <i class="fa fa-bars text-green fa-lg"></i>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h2 class="m-0" id="leaderboardTitle">
+                    <span class="search-input-wrapper">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="search-input" placeholder="search username" oninput="search(event.target.value)">
+                    </span>
+                    shortlisted
+                </h2>
+                <p class="m-0 mb-4 paragraph-small">
+                    <span class="text-orange text-weight-bold">voting open!</span> last date to submit your votes : <span class="text-weight-bold">aug 25, 2020</span>
+                </p>
+            </div>
+        </div> 
+        <div id="content" class="row"></div>
+        <template>
+            <div class="col-sm-6 col-3 mb-4">
+                <div class="entry-item flex">
+                    <img id="thumbs" class="img-fluid entry-thumbnail"> 
+                    <div class="entry-details show-on-desktop">
+                        <span style="float: right;">
+                            <i class="fa fa-fw fa-heart text-smoke text-lighten"></i> 
+                            <span class="text-smoke text-lighten" id="insta_likes"></span>
+                        </span>
+                        <img id="thumbs" class="img-fluid mb-2" style="width: 25%; border-radius: 8px;"> 
+                        <div class="flex mb-2" style="align-items: center;">
+                            <img id="profile_pic" class="img-fluid mr-2" style="width: 12.5%; border-radius: 50%;"> 
+                            <span id="insta_id" class="paragraph-small text-weight-bold text-smoke insta_id"></span>
+                        </div>
+                        <div class="paragraph-small text-smoke text-lighten" id="caption"></div>
+                        <span style="position: absolute; bottom: 0;">
+                            <img src={% static "gallery/assets/standing.svg" %} id="standing" alt="standing" class="mr-1">
+                            <span class="leaderboard-rank"></span>
+                        </span>
+                        <a id="upvote-link"  target="_blank">
+                            <button class="btn btn-upvote-entry btn-green">upvote</button>
+                        </a>   
+                    </div>
+                </div>
+            </div>
+        </template>
+        <div class="text-center" id="loading-icon">
+            <i class="fa fa-spinner fa-pulse fa-2x fa-fw text-orange mb-2"></i>
+            <br>
+            <span class="text-weight-bold text-orange">loading</span>
+        </div>
+        <div class="text-center hidden" id="search-empty-text">
+            <i class="fa fa-exclamation fa-2x fa-fw text-orange mb-2"></i>
+            <br>
+            <span class="text-weight-bold text-orange">no entries found</span>
+        </div>
+    </div>
+    
+    <!-- Preview modal  -->
+    <div id="previewModal" class="modal flex-col">
+    
+        <div class="text-center my-3">
+            <div class="modal-close-btn" id="modalCloseBtn">
+                <i class="fa fa-times fa-lg m-2 text-lighten"></i>
+            </div>
+        </div>
+    
+        <!-- Modal content -->
+        <div class="modal-content flex-grow-1">
+            <div class="flex mb-2">
+                <div class="flex-grow-1">
+                    <p class="text-smoke m-0 paragraph-small paragraph-big" id="modal_username">leader.username</p>
+                    <span class="text-smoke paragraph-small text-lighten"><i class="fa fa-heart text-smoke"></i>
+                    <span id="modal_likes" class="text-smoke paragraph-small text-lighten">leader.likes</span></span>
+                </div>
+                <div class="leaderboard-rank">
+                    01
+                </div>
+            </div>
+            <div class="modal-frame mb-3 flex">
+                <img class="img-fluid" alt="" id="modelFramePreviewImg">
+            </div>
+            <div class="text-center">
+                <a href="" target="_blank">
+                    <button class="btn btn-green mb-2">
+                        upvote on instagram
+                    </button>
+                </a>
+            </div>
+            <p class="paragraph-small text-smoke text-lighten text-center m-0">
+                to upvote, visit instagram and hit <i class="fa fa-heart text-smoke"></i>
+            </p>
+        </div>
+      
+    </div>
+    
+    <script src="./scripts/entries.js" defer></script>
+
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <hr class="my-4">
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-3 mb-3 sm-text-center">
+                <img src="assets/spif-logo.png" style="max-height: 64px;" alt="Suicide India Foundation">
+            </div>
+            <div class="col-2"></div>
+            <div class="col-5">
+                <div class="text-right mb-3 mb-text-center sm-text-center">
+                    <a href="./entries.html" class="nav-link text-green mr-2">entries</a>
+                    <span class="text-green text-weight-bold">.</span>
+                    <a href="./leaderboard.html" class="nav-link text-green mr-2">leaderboard</a>
+                    <span class="text-green text-weight-bold">.</span>
+                    <a href="./index.html" class="nav-link text-green mx-2" target="_blank">about</a>
+                    <span class="text-green text-weight-bold">.</span>
+                    <a href="http://www.spif.in/" class="nav-link text-green mx-2" target="_blank">spif</a>
+                </div>
+                <div class="paragraph-small text-lighten mb-3 text-right sm-text-center">
+                    © 2020 Suicide Prevention India Foundation. All Rights Reserved.
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+</body>
+
+<script src="https://use.fontawesome.com/84351caa5a.js" defer></script>
+<script src="scripts/main.js" defer></script>
+</html>
