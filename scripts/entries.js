@@ -1,6 +1,11 @@
+//
 // Get device width
+//
 var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
+//
+// Get necessary DOM elemets
+//
 var modelFramePreviewImg = document.querySelector("#modelFramePreviewImg");
 var modalUserName = document.querySelector("#modal_username");
 var modalUserLikes = document.querySelector("#modal_likes");
@@ -10,10 +15,27 @@ var modalLeaderboardRank = document.querySelector(
 var modalUpVote = document.querySelector(".modal-content a");
 var content = document.querySelector("#content");
 var template = document.querySelector("template");
-var galleryJSON = null;
 
-function handleJSON(data) {
-  galleryJSON = data.gallery;
+//
+// Populate dummy data 
+//
+var galleryJSON = [];
+// Create sample JSON entry 
+let sampleData = {
+  likes     : 10,
+  profile   : 'https://picsum.photos/id/177/800/800',
+  insta_id  : 'hello2',
+  post      : 'hello3',
+  standing  : 10,
+  caption   : 'hello4',
+  thumbnail : 'https://picsum.photos/id/1052/800/800'
+}
+galleryJSON.push(sampleData);
+galleryJSON.push(sampleData);
+galleryJSON.push(sampleData);
+
+// Add delay of 5 sec : delay during service call
+setTimeout(() => {
   // Iterate over entries and append HTML 
   for (const el of galleryJSON) {
     var clone = template.content.cloneNode(true);
@@ -39,16 +61,7 @@ function handleJSON(data) {
   addEventListeners();
   // Hide loading icon 
   document.querySelector("#loading-icon").style.display = "none";
-}
-
-window.onload = function () {
-  fetch("/gallery/json", {
-    method: "get",
-  })
-    .then((response) => response.json())
-    .then((jsonData) => handleJSON(jsonData))
-    .catch((err) => console.log(err));
-};
+}, 5000);
 
 function addEventListeners() {
   var entries = document.querySelectorAll(".entry-item");
