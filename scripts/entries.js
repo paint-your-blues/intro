@@ -22,17 +22,18 @@ var template = document.querySelector("template");
 var galleryJSON = [];
 // Create sample JSON entry 
 let sampleData = {
-  likes     : 10,
-  profile   : 'https://picsum.photos/id/177/800/800',
-  insta_id  : 'hello2',
-  post      : 'hello3',
-  standing  : 10,
-  caption   : 'hello4',
-  thumbnail : 'https://picsum.photos/id/1052/800/800'
+  likes     : '{{likes}}',
+  profile   : 'https://picsum.photos/800/800',
+  insta_id  : '{{insta_id}}',
+  post      : '#',
+  standing  : 01,
+  caption   : '{{caption}}',
+  thumbnail : 'https://picsum.photos/800/1000'
 }
-galleryJSON.push(sampleData);
-galleryJSON.push(sampleData);
-galleryJSON.push(sampleData);
+for(let i=0;i<16;i++){
+  sampleData.standing = Math.floor(Math.random() * 300) + 1;
+  galleryJSON.push(JSON.parse(JSON.stringify(sampleData)));
+}
 
 // Add delay of 5 sec : delay during service call
 setTimeout(() => {

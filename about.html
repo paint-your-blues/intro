@@ -39,9 +39,9 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image:alt" content="PaintYourBlues">
 
-    <link rel="stylesheet" href="./styles/grid.css">
-    <link rel="stylesheet" href="./styles/typo.css">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/typo.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/aec8kbg.css">
 </head>
 
@@ -51,13 +51,13 @@
         <div class="container py-1">
             <ul>
                 <li class="logo">
-                    <a href="./entries.html" class="nav-link text-green">
+                    <a href="./index.html" class="nav-link text-green">
                         <i class="fa fa-instagram text-green fa-lg mr-1"></i>
                         PaintYourBlues
                     </a>
                 </li>
                 <li class="show-on-desktop">
-                    <a href="./entries.html">
+                    <a href="./index.html">
                         <h5 class="text-green">entries</h5>
                     </a>
                 </li>
@@ -98,7 +98,23 @@
             </ul>
         </div>
     </nav>
-
+    
+    <div id="sidenav" class="sidenav">
+        <div class="sidenavContent">
+            <a href="./index.html">
+                <h4 class="text-smoke">entries</h4>
+            </a>
+            <br>
+            <a href="./leaderboard.html">
+                <h4 class="text-smoke">leaderboard</h4>
+            </a>
+            <br>
+            <a href="./about.html">
+                <h4 class="text-smoke">about</h4>
+            </a>
+        </div>
+    </div>
+    
     <div class="container message-container mb-4">
         <div class="row mb-3 row-reverse-lg">
             <div class="col-1"></div>
@@ -135,13 +151,9 @@
             </div>
             <div class="col-5">
                 <p class="paragraph-main paragraph-big mt-0">
-                    <span class="text-weight-bold">PaintYourBlues</span> - an initiative by Suicide Prevention India Foundation, is a poster campaign to create awareness on key aspects of mental health in our society. we invite artists and designers around to globe to use graphic poster art as a medium to spread awareness on mental health-related issues. all selected posters from the campaign will be made available for non-commercial use as an open-source repository under <a
-                        href="https://creativecommons.org/licenses/by-nc/4.0/"
-                        class="text-weight-bold text-green underline-on-hover" target="_blank">Creative Commons
-                        Attribution-NonCommercial 4.0 International.</a>
+                    <span class="text-weight-bold">PaintYourBlues</span> - an initiative by Suicide Prevention India Foundation, is a poster campaign to create awareness on key aspects of mental health in our society. we invite artists and designers around to globe to use graphic poster art as medium to spread awareness on mental health related issues. all selected posters from the campaign will be made available for non-commercial use as an open source repository under <a href="https://creativecommons.org/licenses/by-nc/4.0/" class="text-weight-bold text-green underline-on-hover" target="_blank">Creative Commons Attribution-NonCommercial 4.0 International.</a>
                 </p>
                 <button class="btn btn-green mb-4" onclick="scrollToGuidelines()">view guidelines</button>
-                <!-- <button class="btn btn-light">view entries</button> -->
             </div>
             <div class="col-1"></div>
             <div class="col-3">
@@ -150,14 +162,14 @@
                     entries open from
                 </h5>
                 <h4 class="text-orange m-0">
-                    may 10 - jul 5
+                    may 10 - july 5
                 </h4>
                 <div class="separator-light my-3"></div>
                 <h5 class="m-0">
                     voting open from
                 </h5>
                 <h4 class="text-orange m-0">
-                    jul 25 - aug 25
+                    july 25 - aug 25
                 </h4>
                 <div class="separator-light my-3"></div>
                 <h5 class="m-0">
@@ -167,7 +179,7 @@
                     ₹ 10,000
                 </h4>
                 <div class="mb-4">
-                    Each for 6 top entries - 3 selected by a curator panel and 3 selected through community voting on
+                    Each for 6 top entries - 3 selected by a curation panel and 3 selected through community voting on
                     instagram.
                 </div>
             </div>
@@ -471,6 +483,8 @@
         </div>
     </div>
 
+    <script src="scripts/about.js" defer></script>
+
     <!-- footer -->
 
     <div class="container pb-5">
@@ -484,22 +498,18 @@
         <div class="row">
             <div class="col-1"></div>
             <div class="col-3 mb-3 sm-text-center">
-                <a href="http://www.spif.in/" target="_blank">
-                    <img src="./assets/spif-logo.png" style="max-height: 64px;" alt="Suicide India Foundation">
-                </a>
+                <img src="assets/spif-logo.png" style="max-height: 64px;" alt="Suicide India Foundation">
             </div>
             <div class="col-2"></div>
             <div class="col-5">
                 <div class="text-right mb-3 mb-text-center sm-text-center">
-                    <a href="#" class="nav-link text-green mr-2">about</a>
+                    <a href="./index.html" class="nav-link text-green mr-2">entries</a>
                     <span class="text-green text-weight-bold">.</span>
-                    <!-- <a href="" class="nav-link text-green mx-2">leaderboard</a> -->
-                    <!-- <span class="text-green text-weight-bold">.</span> -->
+                    <a href="./leaderboard.html" class="nav-link text-green mr-2">leaderboard</a>
+                    <span class="text-green text-weight-bold">.</span>
+                    <a href="./about.html" class="nav-link text-green mx-2" target="_blank">about</a>
+                    <span class="text-green text-weight-bold">.</span>
                     <a href="http://www.spif.in/" class="nav-link text-green mx-2" target="_blank">spif</a>
-                    <!-- <span class="text-green text-weight-bold">.</span> -->
-                    <!-- <a href="" class="nav-link text-green mx-2">curators</a> -->
-                    <!-- <span class="text-green text-weight-bold">.</span> -->
-                    <!-- <a href="" class="nav-link text-green ml-2">legal</a> -->
                 </div>
                 <div class="paragraph-small text-lighten mb-3 text-right sm-text-center">
                     © 2020 Suicide Prevention India Foundation. All Rights Reserved.
@@ -512,6 +522,5 @@
 </body>
 
 <script src="https://use.fontawesome.com/84351caa5a.js" defer></script>
-<script src="./scripts/index.js" defer></script>
-
+<script src="scripts/main.js" defer></script>
 </html>

@@ -31,7 +31,7 @@
     <meta property="og:title" content="PaintYourBlues - Make art that can heal the mind!">
     <meta property="og:description"
         content="A poster campaign to create awareness on mental health. Contribute towards building an Open Source Graphic Library for global distribution.">
-    <meta property="og:image" content="https://paintyourblues.com/details/assets/meta.jpg">
+    <meta property="og:image" content="https://paintyourblues.com/assets/meta.jpg">
     <meta property="og:url" content="https://paintyourblues.com">
     <meta property="og:site_name" content="PaintYourBlues">
 
@@ -42,7 +42,6 @@
     <link rel="stylesheet" href="styles/grid.css">
     <link rel="stylesheet" href="styles/typo.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/leaderboard.css">
     <link rel="stylesheet" href="https://use.typekit.net/aec8kbg.css">
 </head>
 
@@ -52,13 +51,13 @@
         <div class="container py-1">
             <ul>
                 <li class="logo">
-                    <a href="./entries.html" class="nav-link text-green">
+                    <a href="./index.html" class="nav-link text-green">
                         <i class="fa fa-instagram text-green fa-lg mr-1"></i>
                         PaintYourBlues
                     </a>
                 </li>
                 <li class="show-on-desktop">
-                    <a href="./entries.html">
+                    <a href="./index.html">
                         <h5 class="text-green">entries</h5>
                     </a>
                 </li>
@@ -70,7 +69,7 @@
                 </li>
                 <li class="show-on-desktop text-green text-weight-bold mx-3">.</li>
                 <li class="show-on-desktop mr-4">
-                    <a href="./index.html">
+                    <a href="./about.html">
                         <h5 class="text-green">about</h5>
                     </a>
                 </li>
@@ -99,7 +98,23 @@
             </ul>
         </div>
     </nav>
-
+    
+    <div id="sidenav" class="sidenav">
+        <div class="sidenavContent">
+            <a href="./index.html">
+                <h4 class="text-smoke">entries</h4>
+            </a>
+            <br>
+            <a href="./leaderboard.html">
+                <h4 class="text-smoke">leaderboard</h4>
+            </a>
+            <br>
+            <a href="./about.html">
+                <h4 class="text-smoke">about</h4>
+            </a>
+        </div>
+    </div>
+    
     <div class="container">
         <div class="row">
             <div class="col-1"></div>
@@ -112,12 +127,12 @@
                 <ul class="m-0 p-0 pt-2" id="rank-list">
                     <div class="leaderboard-list-item" id="list-item">
                         <div class="mr-2">
-                            <img src="https://picsum.photos/id/1052/800/800" class="leaderboard-thumbnail"> 
-                            <img src="https://picsum.photos/id/177/800/800" class="leaderboard-profile-pic">
+                            <img src="https://picsum.photos/800/800" class="leaderboard-thumbnail"> 
+                            <img src="https://picsum.photos/800/800" class="leaderboard-profile-pic">
                         </div>
                         <div class="flex-grow-1">
-                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{entry.insta_id}</p>
-                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{entry.likes}</span> </span>
+                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{{insta_id}}</p>
+                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{{likes}}</span> </span>
                         </div>
                         <div>
                             <span class="leaderboard-rank">
@@ -125,17 +140,19 @@
                             </span>
                         </div>
                         <div class="upvote-btn-container">
-                            <button class="btn btn-green upvote-btn">upvote</button>
+                            <a href="#" target="_blank">
+                                <button class="btn btn-green upvote-btn">upvote</button>
+                            </a>
                         </div>
                     </div>
                     <div class="leaderboard-list-item" id="list-item">
                         <div class="mr-2">
-                            <img src="https://picsum.photos/id/1052/800/800" class="leaderboard-thumbnail"> 
-                            <img src="https://picsum.photos/id/177/800/800" class="leaderboard-profile-pic">
+                            <img src="https://picsum.photos/800/800" class="leaderboard-thumbnail"> 
+                            <img src="https://picsum.photos/800/800" class="leaderboard-profile-pic">
                         </div>
                         <div class="flex-grow-1">
-                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{entry.insta_id}</p>
-                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{entry.likes}</span> </span>
+                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{{insta_id}}</p>
+                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{{likes}}</span> </span>
                         </div>
                         <div>
                             <span class="leaderboard-rank">
@@ -143,17 +160,19 @@
                             </span>
                         </div>
                         <div class="upvote-btn-container">
-                            <button class="btn btn-green upvote-btn">upvote</button>
+                            <a href="#" target="_blank">
+                                <button class="btn btn-green upvote-btn">upvote</button>
+                            </a>
                         </div>
                     </div>
                     <div class="leaderboard-list-item" id="list-item">
                         <div class="mr-2">
-                            <img src="https://picsum.photos/id/1052/800/800" class="leaderboard-thumbnail"> 
-                            <img src="https://picsum.photos/id/177/800/800" class="leaderboard-profile-pic">
+                            <img src="https://picsum.photos/800/800" class="leaderboard-thumbnail"> 
+                            <img src="https://picsum.photos/800/800" class="leaderboard-profile-pic">
                         </div>
                         <div class="flex-grow-1">
-                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{entry.insta_id}</p>
-                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{entry.likes}</span> </span>
+                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{{insta_id}}</p>
+                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{{likes}}</span> </span>
                         </div>
                         <div>
                             <span class="leaderboard-rank">
@@ -161,17 +180,19 @@
                             </span>
                         </div>
                         <div class="upvote-btn-container">
-                            <button class="btn btn-green upvote-btn">upvote</button>
+                            <a href="#" target="_blank">
+                                <button class="btn btn-green upvote-btn">upvote</button>
+                            </a>
                         </div>
                     </div>
                     <div class="leaderboard-list-item" id="list-item">
                         <div class="mr-2">
-                            <img src="https://picsum.photos/id/1052/800/800" class="leaderboard-thumbnail"> 
-                            <img src="https://picsum.photos/id/177/800/800" class="leaderboard-profile-pic">
+                            <img src="https://picsum.photos/800/800" class="leaderboard-thumbnail"> 
+                            <img src="https://picsum.photos/800/800" class="leaderboard-profile-pic">
                         </div>
                         <div class="flex-grow-1">
-                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{entry.insta_id}</p>
-                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{entry.likes}</span> </span>
+                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{{insta_id}}</p>
+                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{{likes}}</span> </span>
                         </div>
                         <div>
                             <span class="leaderboard-rank">
@@ -179,17 +200,19 @@
                             </span>
                         </div>
                         <div class="upvote-btn-container">
-                            <button class="btn btn-green upvote-btn">upvote</button>
+                            <a href="#" target="_blank">
+                                <button class="btn btn-green upvote-btn">upvote</button>
+                            </a>
                         </div>
                     </div>
                     <div class="leaderboard-list-item" id="list-item">
                         <div class="mr-2">
-                            <img src="https://picsum.photos/id/1052/800/800" class="leaderboard-thumbnail"> 
-                            <img src="https://picsum.photos/id/177/800/800" class="leaderboard-profile-pic">
+                            <img src="https://picsum.photos/800/800" class="leaderboard-thumbnail"> 
+                            <img src="https://picsum.photos/800/800" class="leaderboard-profile-pic">
                         </div>
                         <div class="flex-grow-1">
-                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{entry.insta_id}</p>
-                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{entry.likes}</span> </span>
+                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{{insta_id}}</p>
+                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{{likes}}</span> </span>
                         </div>
                         <div>
                             <span class="leaderboard-rank">
@@ -197,17 +220,19 @@
                             </span>
                         </div>
                         <div class="upvote-btn-container">
-                            <button class="btn btn-green upvote-btn">upvote</button>
+                            <a href="#" target="_blank">
+                                <button class="btn btn-green upvote-btn">upvote</button>
+                            </a>
                         </div>
                     </div>
                     <div class="leaderboard-list-item" id="list-item">
                         <div class="mr-2">
-                            <img src="https://picsum.photos/id/1052/800/800" class="leaderboard-thumbnail"> 
-                            <img src="https://picsum.photos/id/177/800/800" class="leaderboard-profile-pic">
+                            <img src="https://picsum.photos/800/800" class="leaderboard-thumbnail"> 
+                            <img src="https://picsum.photos/800/800" class="leaderboard-profile-pic">
                         </div>
                         <div class="flex-grow-1">
-                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{entry.insta_id}</p>
-                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{entry.likes}</span> </span>
+                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{{insta_id}}</p>
+                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{{likes}}</span> </span>
                         </div>
                         <div>
                             <span class="leaderboard-rank">
@@ -215,17 +240,19 @@
                             </span>
                         </div>
                         <div class="upvote-btn-container">
-                            <button class="btn btn-green upvote-btn">upvote</button>
+                            <a href="#" target="_blank">
+                                <button class="btn btn-green upvote-btn">upvote</button>
+                            </a>
                         </div>
                     </div>
                     <div class="leaderboard-list-item" id="list-item">
                         <div class="mr-2">
-                            <img src="https://picsum.photos/id/1052/800/800" class="leaderboard-thumbnail"> 
-                            <img src="https://picsum.photos/id/177/800/800" class="leaderboard-profile-pic">
+                            <img src="https://picsum.photos/800/800" class="leaderboard-thumbnail"> 
+                            <img src="https://picsum.photos/800/800" class="leaderboard-profile-pic">
                         </div>
                         <div class="flex-grow-1">
-                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{entry.insta_id}</p>
-                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{entry.likes}</span> </span>
+                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{{insta_id}}</p>
+                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{{likes}}</span> </span>
                         </div>
                         <div>
                             <span class="leaderboard-rank">
@@ -233,17 +260,19 @@
                             </span>
                         </div>
                         <div class="upvote-btn-container">
-                            <button class="btn btn-green upvote-btn">upvote</button>
+                            <a href="#" target="_blank">
+                                <button class="btn btn-green upvote-btn">upvote</button>
+                            </a>
                         </div>
                     </div>
                     <div class="leaderboard-list-item" id="list-item">
                         <div class="mr-2">
-                            <img src="https://picsum.photos/id/1052/800/800" class="leaderboard-thumbnail"> 
-                            <img src="https://picsum.photos/id/177/800/800" class="leaderboard-profile-pic">
+                            <img src="https://picsum.photos/800/800" class="leaderboard-thumbnail"> 
+                            <img src="https://picsum.photos/800/800" class="leaderboard-profile-pic">
                         </div>
                         <div class="flex-grow-1">
-                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{entry.insta_id}</p>
-                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{entry.likes}</span> </span>
+                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{{insta_id}}</p>
+                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{{likes}}</span> </span>
                         </div>
                         <div>
                             <span class="leaderboard-rank">
@@ -251,17 +280,19 @@
                             </span>
                         </div>
                         <div class="upvote-btn-container">
-                            <button class="btn btn-green upvote-btn">upvote</button>
+                            <a href="#" target="_blank">
+                                <button class="btn btn-green upvote-btn">upvote</button>
+                            </a>
                         </div>
                     </div>
                     <div class="leaderboard-list-item" id="list-item">
                         <div class="mr-2">
-                            <img src="https://picsum.photos/id/1052/800/800" class="leaderboard-thumbnail"> 
-                            <img src="https://picsum.photos/id/177/800/800" class="leaderboard-profile-pic">
+                            <img src="https://picsum.photos/800/800" class="leaderboard-thumbnail"> 
+                            <img src="https://picsum.photos/800/800" class="leaderboard-profile-pic">
                         </div>
                         <div class="flex-grow-1">
-                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{entry.insta_id}</p>
-                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{entry.likes}</span> </span>
+                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{{insta_id}}</p>
+                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{{likes}}</span> </span>
                         </div>
                         <div>
                             <span class="leaderboard-rank">
@@ -269,17 +300,19 @@
                             </span>
                         </div>
                         <div class="upvote-btn-container">
-                            <button class="btn btn-green upvote-btn">upvote</button>
+                            <a href="#" target="_blank">
+                                <button class="btn btn-green upvote-btn">upvote</button>
+                            </a>
                         </div>
                     </div>
                     <div class="leaderboard-list-item" id="list-item">
                         <div class="mr-2">
-                            <img src="https://picsum.photos/id/1052/800/800" class="leaderboard-thumbnail"> 
-                            <img src="https://picsum.photos/id/177/800/800" class="leaderboard-profile-pic">
+                            <img src="https://picsum.photos/800/800" class="leaderboard-thumbnail"> 
+                            <img src="https://picsum.photos/800/800" class="leaderboard-profile-pic">
                         </div>
                         <div class="flex-grow-1">
-                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{entry.insta_id}</p>
-                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{entry.likes}</span> </span>
+                            <p class="m-0 paragraph-small paragraph-big text-weight-bold" id="insta_id">{{insta_id}}</p>
+                            <span class="paragraph-small text-lighten likes-span"><i class="fa fa-heart mr-1"></i><span id="insta_likes">{{likes}}</span> </span>
                         </div>
                         <div>
                             <span class="leaderboard-rank">
@@ -287,7 +320,9 @@
                             </span>
                         </div>
                         <div class="upvote-btn-container">
-                            <button class="btn btn-green upvote-btn">upvote</button>
+                            <a href="#" target="_blank">
+                                <button class="btn btn-green upvote-btn">upvote</button>
+                            </a>
                         </div>
                     </div>
                 </ul>
@@ -298,7 +333,7 @@
                 <div class="leaderboard-preview-box">
                     <div id="blankPreview" class="p-5">
                         <h4 class="m-0 text-orange mb-3">
-                            leaderboard shows the current trend based likes received on instagram. to upvote an entry, visit instagram and hit <i class="fa fa-heart fa-fw text-orange"></i>
+                            the leaderboard shows the current trend based on likes received. to upvote an entry, visit instagram and hit <i class="fa fa-heart fa-fw text-orange"></i>
                         </h4>
                         <p class="paragraph-main mt-0 text-lighten text-smoke">
                             top three positions after the voting ends will get ₹10,000 each. apart from these, three more entries will be picked by a curator panel.
@@ -337,7 +372,7 @@
                 <img class="img-fluid" alt="" id="modelFramePreviewImg">
             </div>
             <div class="text-center">
-                <a href="">
+                <a href="" target="_blank">
                     <button class="btn btn-green mb-2">
                         upvote on instagram
                     </button>
@@ -349,8 +384,10 @@
         </div>
       
     </div>
+    
+    <script src="scripts/leaderboard.js" defer></script>
 
-  <!-- footer -->
+    <!-- footer -->
 
     <div class="container pb-5">
         <div class="row">
@@ -368,11 +405,13 @@
             <div class="col-2"></div>
             <div class="col-5">
                 <div class="text-right mb-3 mb-text-center sm-text-center">
-                    <a href="./index.html" class="nav-link text-green mr-2">home</a>
+                    <a href="./index.html" class="nav-link text-green mr-2">entries</a>
+                    <span class="text-green text-weight-bold">.</span>
+                    <a href="./leaderboard.html" class="nav-link text-green mr-2">leaderboard</a>
+                    <span class="text-green text-weight-bold">.</span>
+                    <a href="./about.html" class="nav-link text-green mx-2" target="_blank">about</a>
                     <span class="text-green text-weight-bold">.</span>
                     <a href="http://www.spif.in/" class="nav-link text-green mx-2" target="_blank">spif</a>
-                    <span class="text-green text-weight-bold">.</span>
-                    <a href="./legal.html" class="nav-link text-green ml-2">legal</a>
                 </div>
                 <div class="paragraph-small text-lighten mb-3 text-right sm-text-center">
                     © 2020 Suicide Prevention India Foundation. All Rights Reserved.
@@ -386,5 +425,4 @@
 
 <script src="https://use.fontawesome.com/84351caa5a.js" defer></script>
 <script src="scripts/main.js" defer></script>
-<script src="scripts/leaderboard.js" %} defer></script>
 </html>

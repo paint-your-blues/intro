@@ -31,7 +31,7 @@
     <meta property="og:title" content="PaintYourBlues - Make art that can heal the mind!">
     <meta property="og:description"
         content="A poster campaign to create awareness on mental health. Contribute towards building an Open Source Graphic Library for global distribution.">
-    <meta property="og:image" content="https://paintyourblues.com/details/assets/meta.jpg">
+    <meta property="og:image" content="https://paintyourblues.com/assets/meta.jpg">
     <meta property="og:url" content="https://paintyourblues.com">
     <meta property="og:site_name" content="PaintYourBlues">
 
@@ -42,7 +42,6 @@
     <link rel="stylesheet" href="styles/grid.css">
     <link rel="stylesheet" href="styles/typo.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/leaderboard.css">
     <link rel="stylesheet" href="https://use.typekit.net/aec8kbg.css">
 </head>
 
@@ -99,6 +98,22 @@
             </ul>
         </div>
     </nav>
+    
+    <div id="sidenav" class="sidenav">
+        <div class="sidenavContent">
+            <a href="./index.html">
+                <h4 class="text-smoke">entries</h4>
+            </a>
+            <br>
+            <a href="./leaderboard.html">
+                <h4 class="text-smoke">leaderboard</h4>
+            </a>
+            <br>
+            <a href="./about.html">
+                <h4 class="text-smoke">about</h4>
+            </a>
+        </div>
+    </div>
 
     <div class="container">
         <div class="row">
@@ -133,7 +148,7 @@
                         </div>
                         <div class="paragraph-small text-smoke text-lighten" id="caption"></div>
                         <span style="position: absolute; bottom: 0;">
-                            <img src={% static "gallery/assets/standing.svg" %} id="standing" alt="standing" class="mr-1">
+                            <img src="assets/standing.svg" id="standing" alt="standing" class="mr-1">
                             <span class="leaderboard-rank"></span>
                         </span>
                         <a id="upvote-link"  target="_blank">
